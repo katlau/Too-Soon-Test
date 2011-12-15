@@ -1,1 +1,142 @@
-<!-- this gon be a thing -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Was that too soon?</title>
+
+  <meta name="description" content="too soon tester for those with comedic timing challenges" />
+  <meta name="keywords" content="too,soon,test,joke,lolz"/>
+  <meta name="author" content="Kat Lau">
+
+  <link rel="stylesheet" href="./main.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+
+  <script src="./jquery.js" type="text/javascript"></script>
+  <script src="./main.js" type="text/javascript"></script>
+
+
+</head>
+  <body>
+	<div id="header">
+		<div id="headercontent">
+		<div id="menu1" class="menu"><a href="./index.html"><b>TFLN:</b>Yale</a></div>
+	    <div id="menu2" class="menu"><a href="./index.html">Home</a></div>
+		<div id="menu3" class="menu"><a href="./index.html">Profile</a></div>
+		</div>
+	</div>
+	<div id="main">
+		Texts from Last Night: Yale
+		<div id="new_post">Submit your TFLN</div>
+		<div id="updates">
+				Five new texts since your last visit! <a href="./index.html">Click</a> to reveal.
+		</div>
+
+	<!-- blank text for cloning-->
+		<div id="new_text_box" style="display:none">
+		  <form method="post" action="/">
+	      <textarea id="new_text_body" class="defaultText" alt="(541) GTFO" name="post[content]"/>(925) GTFO</textarea>
+	      <input type="submit" value="Submit the Shame" id="submit_text" />
+	      </form>
+	    </div>
+
+		<% for ( var i = 0; i < posts.length; i++ )  { %>
+
+		    <div class="text">
+		      <p class="text_body"><%= posts[ i ].content %></p>
+		      <div class="text_time"><%= posts[ i ].date_display() %></div>
+		    </div>
+
+
+		  <% } %>  
+
+
+			<div class="text">
+					<p class="text_body">
+					<b>(808)</b> I just read webcomics in the library for three hours<br />
+					<b>(917)</b> Model Student Medeiros<br />
+					<b>(808)</b> That's what they called me in 'nam<br />
+					<b>(917)</b> THIS ISN'T 'NAM
+					<br />
+					</p>
+				<div class="text_time">
+						5 hours ago...
+				</div>
+			</div>
+			<div class="text">
+				<p class="text_body">
+					<b>(214)</b> Be careful whenever you get home. There is a baby gate in the kitchen. You will need to step over it. We are trying to catch a rat.
+				<br />
+				</p>
+				<div class="text_time">
+						Yesterday...
+				</div>
+			</div>
+			<div class="text">
+				<p class="text_body">
+					<b>(413)</b> you need to come to my room. imbhigh as fck and camtfeel my feet.
+					<br />
+					</p>
+				<div class="text_time">
+						2 days ago...
+				</div>
+			</div>
+			<div class="text">
+				<p class="text_body">
+					<b>(310)</b> SHOULDA COME TO GOTHAM<br />
+					<b>(248)</b> Damn it :[<br />
+					<b>(310)</b> Actually it was kind of creepy and not fun at all. Or maybe not, I dunno, I'm so fuckin baked right now.
+					<br />
+					</p>
+				<div class="text_time">
+						3 days ago...
+				</div>
+			</div>
+			<div class="text">
+				<p class="text_body">
+					<b>(310)</b> well if you work diligently and wanna break we should go out!!<br />
+					<b>(248)</b> Haha if I finish my homosexuality paper. which I haven't started.<br />
+					<b>(310)</b> You're straight homo. You got this.
+					<br />
+					</p>
+				<div class="text_time">
+						6 days ago...
+				</div>
+			</div>
+			<div class="text">
+				<p class="text_body">
+					<b>(708)</b> I hope my drunk convo with random people I dont know will not have consequences for you...
+					<br />
+					</p>
+				<div class="text_time">
+						A week ago...
+				</div>
+			</div>
+			<div class="text">
+				<p class="text_body">
+					<b>(347)</b> 24 hours later and my entryway still reeks of beer, vomit, and lost dreams. damn you spring fling. ps want some cookies?
+					<br />
+					</p>
+				<div class="text_time">
+						A few months ago...
+				</div>
+			</div>
+			<div class="text">
+				<p class="text_body">
+					<b>(808)</b> You ditched me!<br />
+					<b>(860)</b> That I did. Planned you to with me hook up? If so, alas for thine soul, forever dissatisfied
+					<br />
+					</p>
+				<div class="text_time">
+						About a year ago...
+				</div>
+			</div>
+	</div>
+	<div id="footer">&copy; Yeah, I mean, you could copy this or whatever...idgaf</div>
+
+	<!-- that jquery tutorial told me to put my jquery links here...-->
+
+
+
+
+
+  </body>
+</html>
