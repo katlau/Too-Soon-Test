@@ -45,3 +45,40 @@ function submitText(){
    $('#new_post').show();
 
 }
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function(){
+		$( "#atrocityslider" ).slider({
+			value:50,
+			min: 0,
+			max: 100,
+			step: 5,
+			slide: function( event, ui ) {
+				$( "#atrocityamount" ).val(  ui.value );
+			}
+		});
+		$( "#atrocityamount" ).val( $( "#atrocityslider" ).slider( "value" ) );
+	});
+	
+	
+
+$(document).ready(function(){
+		$( "#currentslider" ).slider({
+			value:5,
+			min: 0,
+			max: 100,
+			step: 5,
+			slide: function( event, ui ) {
+				$( "#currentamount" ).val(  ui.value );
+			}
+		});
+		$( "#currentamount" ).val( $( "#currentslider" ).slider( "value" ) );
+	});
