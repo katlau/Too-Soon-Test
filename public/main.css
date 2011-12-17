@@ -22,7 +22,7 @@ a:hover {
 }
 
 body {
-	background:#E4E9EE url("./images/background.jpg") top left;
+	background:#E4E9EE url("../images/background.jpg") top left;
 	background-attachment:fixed;
 	height:100%;
     margin:0px;
