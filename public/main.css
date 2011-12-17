@@ -13,17 +13,17 @@
 
 a {
 	color:#aa2233;
-	text-decoration: none;
+	text-decoration:none;
 }
 
 a:hover {
-	color: #444;
-	text-decoration: none;
+	color:#444;
+	text-decoration:none;
 }
 
 body {
-	background: #E4E9EE url("./images/background.jpg") top left;
-	background-attachment: fixed;
+	background:#E4E9EE url("./images/background.jpg") top left;
+	background-attachment:fixed;
 	height:100%;
     margin:0px;
     padding:0px;
