@@ -8,12 +8,12 @@
   <meta name="author" content="Kat Lau">
 
   <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
-  <link rel="stylesheet" href="main.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="redmond.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="./main.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="./redmond.css" type="text/css" media="screen">
 
-<script src="jquery.js" type="text/javascript"></script>
-<script src="jquery-ui.js" type="text/javascript"></script>
-<script src="main.js" type="text/javascript"></script>
+<script src="./jquery.js" type="text/javascript"></script>
+<script src="./jquery-ui.js" type="text/javascript"></script>
+<script src="./main.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -36,12 +36,12 @@
 		
 		<div class="question">
 		How many lives were directly affected by this event?
-		<input type="text" class="span2" />
+		<input type="text" class="span2" id="livesAffected"/>
 		</div>
 		
 		<div class="question">
 		Degrees of separation between your audience and the event:
-		<select class="span2">
+		<select class="span2" id="separation">
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -54,7 +54,7 @@
 		
 		<div class="question">
 		How long since the event (in years)?
-		<input type="text" class="span2" />
+		<input type="text" class="span2" id="timeSince"/>
 		</div>
 		
 		<div class="question">
@@ -68,24 +68,23 @@
 		Did your joke involve any of the following groups?<br />
 		<input type="checkbox" value="nazis" class="choose" />Nazis<br />
 		<input type="checkbox" value="communists" class="choose" />Communists<br />
-		<input type="checkbox" value="asians" class="choose" />Asians in a Library
+		<input type="checkbox" value="asians" class="choose" />Asians in a Library<br />
+		<input type="checkbox" value="kim" class="choose" />Kim Jong-il
 		</div>
 		
-		<div class="question">
-		Great! Now click here to get your results...
-		</div><br />
-		
-		<button class="btn large info right">Can you handle the truth?</button>
+		<button class="btn large info right" id="submitbutton">Can you handle the truth?</button>
 		
 	</form>
 </div>
 	
 <div id="results">
 	
-	<a href="/sneak.html">Click here</a> to see how the algorithm works...
+	<a href="/sneak.html" id="sneakLink">Click here</a> to see how we calculated...
 </div>
 
 <div id="sneak">
+	
+	<a href="/index.html" id="backHome">Go back</a>
 </div>
 
 </div>
