@@ -11,6 +11,26 @@ $(document).ready(function(){
 		$( "#atrocityamount" ).val( $( "#atrocityslider" ).slider( "value" ) );
 	});
 
+	//functions determining window displays
+	function showResults(){
+	    $('#toosoontest').hide();
+	    $('#results').show();
+		$('#sneak').hide();
+	}
+
+	function showSneak(){
+		$('#toosoontest').hide();
+		$('#results').hide();
+		$('#sneak').show();
+	}
+
+	function goBack(){
+		$('#toosoontest').show();
+		$('#results').hide();
+		$('#sneak').hide();
+	}
+
+
 //what displays when you click each link?
 
 $(document).ready(function(){
@@ -22,27 +42,29 @@ $(document).ready(function(){
     
 });
 
-
-//functions determining window displays
-function showResults(){
-    $('#toosoontest').hide();
-    $('#results').show();
-	$('#sneak').hide();
-}
-
-function showSneak(){
-	$('#toosoontest').hide();
-	$('#results').hide();
-	$('#sneak').show();
-}
-
-function goBack(){
-	$('#toosoontest').show();
-	$('#results').hide();
-	$('#sneak').hide();
-}
-
 //create variables for Too Soon Test
+
+if ($('#separation').val() === "Kevin Bacon")
+{var separation = 7}
+else {var separation = $('#separation').val();
+}
+
+if ($('.choose').val() === "yes")
+{var laugh = 2}
+else if ($('.choose').val() === "no")
+{var laugh = 0}
+else if ($('.choose').val() === "me")
+{var laugh = 1}
+
+if ($('.choose').val() === "nazis")
+{var groups = 3}
+else if ($('.choose').val() === "asians")
+{var groups = 1}
+else if ($('.choose').val() === "kim")
+{var groups = 1}
+else if ($('.choose').val() === "occupy")
+{var groups = 2}
+
 var about = $('#about').val();
 var amount = $('#amount').val();
 var livesAffected = $('#livesAffected').val();
@@ -51,7 +73,7 @@ var timeSince = $('#timeSince').val();
 
 //Too Soon Test
 //turns out you can't just multiply/divide variables or anything...hmmmmm
-//var result = ( atrocityamount * livesAffected )/(separation * timeSince)
+var result = ( atrocityamount * (livesAffected * 0.4))/(separation * timeSince)
 //function tooSoon(atrocityamount, livesAffected, separation, timeSince){
 
 
