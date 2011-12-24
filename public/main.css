@@ -83,10 +83,7 @@ input.choose {
 	text-align:center;
 }
 
-#results {
-	display:none;
-}
-
-#sneak {
-	display:none;
+#sneaklink {
+	margin-top: 60px;
+	margin-bottom: 15px;
 }

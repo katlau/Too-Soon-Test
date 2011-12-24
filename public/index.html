@@ -23,25 +23,25 @@
 	<p class ="description">Do you struggle with comedic timing? Have you ever made a joke only to be met with an awkward pause and a "...too soon, man."?<br /></p>
 	<p class="description">Well, never fear! We're here to help. Simply enter the details of the situation below, and our patented Too Soon Technology&#174; will let you know for sure if the world is ready for your humor. 
 	</p>
-	<form>
+	<form action="./results.html" name="testform" method="post" id="testform">
 		<div class="question">
-		What were you talking about?<br /><input type="text" id="about"/>
+		What were you talking about?<br /><input type="text" id="about" name="about" />
 		</div>
 		
 		<div class="question">
 		Atrocity Scale of the event you referenced (from 1-100):<br />
-		<input type="text" id="atrocityamount" />
+		<input type="text" id="atrocityamount" name="atrocityamount" />
 		<div id="atrocityslider" class="slider"></div>
 		</div>
 		
 		<div class="question">
 		How many lives were directly affected by this event?
-		<input type="text" class="span2" id="livesAffected"/>
+		<input type="text" class="span2" id="livesAffected" name="livesAffected" />
 		</div>
 		
 		<div class="question">
 		Degrees of separation between your audience and the event:
-		<select class="span2" id="separation">
+		<select class="span2" id="separation" name="separation" >
 		<option value="1">1</option>
 		<option value="2">2</option>
 		<option value="3">3</option>
@@ -54,7 +54,7 @@
 		
 		<div class="question">
 		How long since the event (in years)?
-		<input type="text" class="span2" id="timeSince"/>
+		<input type="text" class="span2" id="timeSince" name="timeSince" />
 		</div>
 		
 		<div class="question">
@@ -66,25 +66,14 @@
 		
 		<div class="question">
 		Did your joke involve any of the following groups?<br />
-		<input type="checkbox" value="nazis" class="choose" />Nazis<br />
-		<input type="checkbox" value="asians" class="choose" />Asians in a Library<br />
-		<input type="checkbox" value="kim" class="choose" />Kim Jong-il<br />
-		<input type="checkbox" value="occupy" class="choose" />Occupy Protesters
+		<input type="checkbox" value="nazis" class="choose" name="groups" />Nazis<br />
+		<input type="checkbox" value="asians" class="choose" name="groups" />Asians in a Library<br />
+		<input type="checkbox" value="kim" class="choose" name="groups" />Kim Jong-il<br />
+		<input type="checkbox" value="occupy" class="choose" name="groups" />Occupy Protesters
 		</div>
 		
-		<button class="btn large info right" id="submitbutton">Can you handle the truth?</button>
-		
+		<br /><a href="./results.html"><input type="submit" id="submitbutton" class="btn large info right" value="Can you handle the truth?" data-loading-text="working..."></a>		
 	</form>
-</div>
-	
-<div id="results">
-	
-	<a href="/sneak.html" id="sneakLink">Click here</a> to see how we calculated...
-</div>
-
-<div id="sneak">
-	
-	<a href="/index.html" id="backHome">Go back</a>
 </div>
 
 </div>
