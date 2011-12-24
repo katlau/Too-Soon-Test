@@ -22,7 +22,7 @@ a:hover {
 }
 
 body {
-	background-image:url("./images/background.jpg");
+	background-image:url("../images/background.jpg");
 	background-attachment:fixed;
 	height:100%;
     margin:0px;
@@ -75,6 +75,14 @@ input.choose {
 	margin-top:15px;
 }
 
+#result {
+	display:none;
+}
+
+#sneak {
+	display:none;
+}
+
 #footer {
 	font-size:10px;
 	font-style:italic;
@@ -84,6 +92,11 @@ input.choose {
 }
 
 #sneaklink {
+	margin-top: 60px;
+	margin-bottom: 15px;
+}
+
+#homelink {
 	margin-top: 60px;
 	margin-bottom: 15px;
 }
