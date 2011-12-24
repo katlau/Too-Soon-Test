@@ -11,7 +11,7 @@ $(document).ready(function(){
 		$( "#atrocityamount" ).val( $( "#atrocityslider" ).slider( "value" ) );
 });
 
-//what happens when we click?
+//what happens when we click the button?
 $('#submitbutton').click(testSubmit);
 
 function testSubmit(){
@@ -21,13 +21,13 @@ function testSubmit(){
 	runTooSoonTest();
 }
 
-//create variables for Too Soon Test
+//Too Soon Test
 function runTooSoonTest(){
 	if ($('#separation').val() === "kevinbacon")
 		{var separation = 7;}
 	else {var separation = $('#separation').val();}
 
-//is this even a valid way to make this condition? sort of just made this up...slash testing it in the console isn't turning kevinbacon into a 7.
+//kevinbacon's not returning a value of 7...
 
 	if ($('.choose').val() === "yes")
 		{var laugh = 2;}
