@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    //initialize slider
 		$( "#atrocityslider" ).slider({
 			value:50,
 			min: 0,
@@ -9,10 +10,12 @@ $(document).ready(function(){
 			}
 		});
 		$( "#atrocityamount" ).val( $( "#atrocityslider" ).slider( "value" ) );
+			
+		//set document hooks
+    $('#submitbutton').click(testSubmit);
 });
 
-//what happens when we click the button?
-$('#submitbutton').click(testSubmit);
+
 
 function testSubmit(){
 	$('#toosoontest').hide();
@@ -58,12 +61,13 @@ function runTooSoonTest(){
 
 	if (result <= 1)
 	{
-	$('#result').html("Congratulations! With a Too Soon Quotient of " + result + ", your joke about " + about + "was just soon enough. Keep those jokes comin! <br /><span id='sneaklink'>Click here</span> to see how we calculated...");
+	$('#result').html("Congratulations! With a Too Soon Quotient of " + result + ", your joke about " + about + " was just soon enough. Keep those jokes comin! <br /><span id='sneaklink'>Click here</span> to see how we calculated...");
 	}
 	else 
 	{
 	$('#result').html("Woah there. With a Too Soon Quotient of " + result + ", your joke was a bit too soon. Give it some time. <br /><span id='sneaklink'>Click here</span> to see how we calculated...");
 	}
+	$('#result').show();
 }
 
 //functions for other pages
